@@ -1,0 +1,29 @@
+﻿<Application
+    x:Class="RealWorldStocks.UI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <sys:String x:Key="AppName">Real-world Stocks</sys:String>
+            <sys:String x:Key="AppNameUpper">REAL-WORLD STOCKS</sys:String>
+
+            
+            <local:LocalizedStrings xmlns:local="clr-namespace:RealWorldStocks.UI" x:Key="LocalizedStrings"/>
+        </ResourceDictionary>
+    </Application.Resources>
+
+
+    <Application.ApplicationLifetimeObjects>
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>
