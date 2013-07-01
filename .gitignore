@@ -98,7 +98,9 @@ publish/
 
 # NuGet Packages Directory
 packages/*
-!packages/repositories.config             # do not ignore targets
+packages/repositories.config             # do not ignore targets
+!packages/*/*.targets
+
 
 # Windows Azure Build Output
 csx
