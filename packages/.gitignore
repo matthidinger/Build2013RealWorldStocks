@@ -1,0 +1,4 @@
+*                      # ignore all files
+!*/                    # do not ignore directories
+!*.targets             # do not ignore targets
+!*.gitignore           # do not ignore gitignore
